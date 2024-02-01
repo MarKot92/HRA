@@ -962,7 +962,7 @@ body {
   line-height: 120%;
   padding-bottom: 24px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .employee:hover .employee__blue__corner{
@@ -1079,6 +1079,11 @@ body {
   .our__lawyers__text{
     font-size: 14px;
   }
+  .our__lawyers__container {
+    padding: 60px 0px ;
+  
+  
+  }
 }
 
 
@@ -1167,8 +1172,10 @@ body {
 .client__review__block{
   background-color: #fff;
   max-width: 648px;
+  min-width: 576px;
   padding: 32px;
   box-shadow: 2px 2px 10px 0px #21212126;
+  margin-bottom: 12px;
 
 }
 .client__review__block:not(:last-child){
@@ -1212,7 +1219,81 @@ body {
 
 }
 .review__buttons {
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
+@media (max-width:1150px) {
+  .review__client{
+    overflow: auto;
+  }
+  .review__block {
+    padding: 60px 0px;
+  }
+  
+}
+@media (max-width:743.98px){
+  .client__review__block{
+    min-width: 340px;
+    padding: 24px;
+  }
+  .client__review__icon{
+    display: none;
+  }
+  .client__review__name {
+    font-size: 18px;
+  }
+  
+}
+@media (max-width:500px){
+  .review__switch{
+    display: none;
+  }
+  .review__block {
+    padding: 40px 0px;
+  }
+  .review__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review__buttons{
+    margin-top: 12px;
+  }
+}
 
+/*------------NEWS-------------------*/
+
+
+.news {
+}
+.news__container {
+}
+._container {
+}
+.news__block {
+}
+.news__header {
+}
+.news__titile__h3 {
+}
+
+.news__title__text {
+}
+.news__basic {
+}
+.basic__news {
+}
+.basic__news__block {
+}
+.basic__news__background {
+}
+.basic__news__titile {
+}
+.basic__news__date {
+}
+.basic__news__text {
+}
+.basic__news__corner {
+}
+.news__buttons {
+}
