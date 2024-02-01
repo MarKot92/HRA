@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap');
+
+
+@import "style-reset.scss";
+
+
+/*------------------------------------------------------*/
+
+body{
+	font-family: "Nunito Sans";
+}
+
+.wrapper{
+	min-height: 100%;
+	/*padding: 0px 15px;*/
+	display: flex;
+	flex-direction: column;
+}
+
+/*-------------------------------------------------------*/
+
+._container{
+	max-width: 1620px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+}
+
+._ibg{
+	position: relative;
+}
+
+._ibg{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+/*-----------------------------------------------------------*/
+
+.contacts {
+
+	/* .contacts_phone */
+
+	&_phone {
+	}
+
+	/* .contacts_mail */
+
+	&_mail {
+	}
+
+	/* .contacts_call */
+
+	&_call {
+	}
+
+	/* .contacts__container */
+
+	&__container {
+	}
+
+	/* .contacts__phone-and-mail */
+
+	&__phone-and-mail {
+	}
+
+	/* .contacts__call */
+
+	&__call {
+	}
+}
+. {
+	max-width: 1620px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+	/* ._container */
+
+	&_container {
+		max-width: 1620px;
+		margin: 0px auto;
+		padding: 0px 15px;
+		box-sizing: content-box;
+	}
+}
+
+
