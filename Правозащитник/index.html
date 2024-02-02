@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="wrapper">
-    <div class="page">
+    <main class="page">
         <div class="contacts">
             <div class="contacts__container _container">
                 <div class="contacts__phone-and-mail">
@@ -49,7 +48,7 @@
                     <p class="item__subtitle">Оказываем весь комплекс</p>
                     <h2 class="item__title">Юридических услуг</h2>
                     <p class="item__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
-                    <button class="item__button button-page"><a href="#ourservices">наши Услуги</a></button>
+                    <a class="item__button button-page" href="#ourservices">наши Услуги</a>
                 </div>
             </div>
         </section>
@@ -76,12 +75,12 @@
                     </div>
                     <div class="blocks__info__background">
                         <div class="blocks__info__item">
-                            <div class="bloks__info__icon" id="hover">
+                            <div class="bloks__info__icon">
                             </div>
-                            <p class="bloks__info__title" id="hover">
+                            <p class="bloks__info__title">
                                 Сопровождение сделок
                             </p>
-                            <p class="blocks__info__text" id="hover">
+                            <p class="blocks__info__text">
                                 Инициирование, оформление, осуществление сделки и достижение результата — это именно то, чем мы занимаемся каждый день.
                             </p>
                         </div>
@@ -162,7 +161,7 @@
             <div class="law__firm__container _container">
                 <div class="law__firm__block">
                     <div class="law__firm__info__block info__block">
-                        <div class="info__block__h3 title__h3" id="lawfirm"><div>Юридическая компания <b>правозащитник</b></div><span></span></div>
+                        <h3 class="info__block__h3 title__h3" id="lawfirm">Юридическая компания <b>правозащитник</b><span></span></h3>
                         <div class="info__block__text">
                             <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.  .</p><br>
                             <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p><br>
@@ -177,11 +176,11 @@
                 </div>
             </div>
         </section>
-        <sectino class="our__lawyers">
+        <section class="our__lawyers">
             <div class="our__lawyers__container _container">
                 <div class="our__lawyers__block">
                     <div class="our__lawyers__header">
-                        <div class="our__lawyers__title title__h3" id="ourlawyers">Наши юристы<span></span></div>
+                        <h3 class="our__lawyers__title title__h3" id="ourlawyers">Наши юристы<span></span></h3>
                         <p class="our__lawyers__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
                     </div>
                 </div>
@@ -248,7 +247,7 @@
                     </div>
                 </div>
             </div>
-        </sectino>
+        </section>
         <section class="review">
             <div class="review__container _container">
                 <div class="review__block">
@@ -256,7 +255,7 @@
                         <h3 class="review__title__h3 title__h3">Что о нас говорят клиенты<span></span></h3>
                         <div class="review__switch">
                             <img src="./img/svg/arrowleft.svg" alt="arrowleft">
-                            <img src="./img/svg/Line 3.svg" alt="Line">
+                            <img src="./img/svg/Line.svg" alt="Line">
                             <img src="./img/svg/arrowright.svg" alt="arrowright">
                            
                         </div>
@@ -316,7 +315,7 @@
                             </div>                            
                         </div>
                         <div class="basic__news__block">
-                            <div class="basic__news__background"><img src="./img/photo__Eiffel__ tower.jpg" alt="">
+                            <div class="basic__news__background"><img src="./img/photo__Eiffel__tower.jpg" alt="">
                                 <div class="basic__news__corner">
                                     <div class="blocks__info__white__corner_left-top"></div>
                                     <div class="blocks__info__white__corner_left-bottom blocks__info__white__corner_left-bottom_news"></div>
@@ -410,6 +409,7 @@
                 </div>
             </div>
         </section>
+    </main>
     <footer class="reserved">
         <div class="reserved__container _container">
             <div class="reservwd__block">
@@ -418,7 +418,6 @@
             </div>
         </div>
     </footer>
-   </div>
    <script>
     document.querySelector('.menu__menu-burger').addEventListener('click', function(){
         this.classList.toggle('active');

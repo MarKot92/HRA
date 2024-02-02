@@ -81,12 +81,6 @@ body {
 
 }
 
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
 
 /*-------------------------------------------------------*/
 ._container {
@@ -202,10 +196,7 @@ body {
   justify-content: space-between;
   height: 100%;
 }
-.header__logo {
-}
-.logo { 
-}
+
 .logo__name {
   color:#4F8FF0;
   font-size: 28px;
@@ -221,11 +212,7 @@ body {
   line-height: 150%; 
 }
 
-.header__menu{
-}
-.menu {
 
-}
 .menu__list {
   display: flex;
   font-size: 18px;
@@ -466,8 +453,7 @@ body {
   .item__text {
     font-size: 18px;
   }
-  .item__button {
-  }
+
 
   
 }
@@ -551,8 +537,7 @@ body {
   margin: 24px 0px 80px 0px;
 }
 
-.our__services__blocks {
-}
+
 .blocks__info {
   display: flex;
   justify-content: space-between;
@@ -794,12 +779,7 @@ body {
 
 /*-------------Law-Firm----------------------*/
 
-.law__firm {
 
-}
-.law__firm__container {
- 
-}
 .law__firm__block {
   display: flex;
   padding: 80px 0px;
@@ -919,11 +899,7 @@ body {
   max-width: 920px;
   margin-bottom: 48px;
 }
-.our__lawyers__title {
-  
-  
-  
-}
+
 
 .our__lawyers__text {
   color: #222;
@@ -932,8 +908,7 @@ body {
   line-height: 120%; /* 19.2px */
 }
 
-.our__lawyers__brief__information {
-}
+
 .brief__information {
   display: flex;
   justify-content: space-between;
@@ -944,9 +919,7 @@ body {
   
 }
 
-.brief__information__employee {
-  
-}
+
 .employee {
   width: 312px;
   height: 414px;
@@ -954,7 +927,6 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  color:#222;
   text-align: center;
   line-height: 120%;
   margin-bottom: 12px;
@@ -1156,9 +1128,7 @@ body {
   background: url(../img/bg_2.jpg) no-repeat center/cover;
 
 }
-.review__container {
-  
-}
+
 
 .review__block {
   padding: 80px 0px;
@@ -1289,8 +1259,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.news__container {
-}
+
 
 .news__block {
   padding: 80px 0px;
@@ -1302,14 +1271,12 @@ body {
   max-width: 920px;
 
 }
-.news__titile__h3 {
-}
+
 
 .news__title__text {
   text-align: center;
 }
-.news__basic {
-}
+
 .basic__news {
   display: flex;
   width: 100%;
@@ -1330,7 +1297,7 @@ body {
 .basic__news__background {
   position: relative;
 }
-.basic__news__background:hover:before{ 
+.basic__news__background:before{ 
   content: '';
 	display: block;
 	width: 100%;
@@ -1339,15 +1306,23 @@ body {
 	top: 0;
 	left: 0;
 	background: #4F8FF066;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
   
 }
+
+.basic__news__background:hover:before{
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
 .basic__news__background:hover .basic__news__corner{
-  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease 0s;
 }
 
 .basic__news__background:hover .basic__news__titile{
   color: #4F8FF0;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 
 }
 .basic__news__item{
@@ -1376,7 +1351,8 @@ body {
 
 }
 .basic__news__corner {
-  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
 }
 
 .blocks__info__white__corner_left-bottom_news {
@@ -1436,8 +1412,7 @@ body {
   background: #222222;
   
 }
-.footer__container {
-}
+
 .footer__block {
   padding: 80px 0px;
 }
@@ -1511,8 +1486,7 @@ body {
 
 }
 
-.menu__footer {
-}
+
 .menu__footer__list {
   flex-direction: column;
 }
