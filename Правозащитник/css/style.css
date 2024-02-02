@@ -367,7 +367,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(/img/bg_1.jpg) no-repeat center/cover;
+  background: url(../img/bg_1.jpg) no-repeat center/cover;
   z-index: 1;
 }
 .service::before{ 
@@ -795,9 +795,7 @@ body {
 /*-------------Law-Firm----------------------*/
 
 .law__firm {
-  background: url(../img/bg_2.jpg) no-repeat center;
-  width: 100%;
-  height: 100%;
+
 }
 .law__firm__container {
  
@@ -954,22 +952,28 @@ body {
   height: 414px;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color:#222;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+    color:#222;
   text-align: center;
   line-height: 120%;
-  padding-bottom: 24px;
-  position: relative;
   margin-bottom: 12px;
+  position: relative;
+}
+
+.employee:hover{
+  justify-content: center;
+
 }
 
 .employee:hover .employee__blue__corner{
-  display: block;
+  opacity: 1;
+  transition: all 0.5s ease 0s;
 }
 .employee:hover .employee__photo{
-  display: none;
+  opacity: 0;
+  
+  transition: all 0.5s ease 0s;
 }
 
 .employee:hover .employee__text{
@@ -986,6 +990,12 @@ body {
 
 
 .employee__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
+  
 }
 
 .employee__block__info{
@@ -1022,7 +1032,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  display: none;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
 }
 .employee__blue__corner__left__top {
   border-top: 1px solid #4F8FF0;
@@ -1265,35 +1276,361 @@ body {
 
 
 .news {
+  width: 100%;
+  height: 100%;
 }
 .news__container {
 }
-._container {
-}
+
 .news__block {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .news__header {
+  max-width: 920px;
+
 }
 .news__titile__h3 {
 }
 
 .news__title__text {
+  text-align: center;
 }
 .news__basic {
 }
 .basic__news {
+  display: flex;
+  width: 100%;
+  
 }
 .basic__news__block {
+  margin: 48px 0px 12px 0px;
+  width: 424px;
+  color: #222222;
+  text-align: left;
+  padding-bottom: 24px;
+
 }
+.basic__news__block:not(:last-child){
+  margin-right: 24px;
+}
+
 .basic__news__background {
+  position: relative;
+}
+.basic__news__background:hover:before{ 
+  content: '';
+	display: block;
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4F8FF066;
+  
+}
+.basic__news__background:hover .basic__news__corner{
+  visibility: visible;
+}
+
+.basic__news__background:hover .basic__news__titile{
+  color: #4F8FF0;
+  transition: all 0.3s ease 0s;
+
+}
+.basic__news__item{
+  margin: 24px 0px;
+
+
 }
 .basic__news__titile {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 24px;
+
+
 }
 .basic__news__date {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 120%;
+  margin: 12px 0px;
 }
 .basic__news__text {
+  line-height: 121%;
+
+
+
 }
 .basic__news__corner {
+  visibility: hidden;
+}
+
+.blocks__info__white__corner_left-bottom_news {
+  top: 215px;
+}
+.blocks__info__white__corner_right-bottom {
+  top: 215px;
+  
 }
 .news__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+
+}
+
+@media (max-width:1350px) {
+  .basic__news{
+    overflow: auto;
+  }
+}
+@media (max-width:1150px){
+  .news__block {
+    padding: 60px 0px;
+  }
+  .news__buttons {
+    margin-top: 36px;
+  }
+  .basic__news__block {
+    margin: 29px 0px 12px 0px;
+    width: 336px;
+    padding-bottom: 16px;
+  
+  }
+  .basic__news__background{
+    overflow: hidden;
+  }
+}
+@media (max-width:500px){
+  .news__block {
+    padding: 40px 0px;
+  }
+  .basic__news__block {
+    margin: 24px 0px 33px 0px;
+    width: 250px;
+    padding-bottom: 16px;
+  
+  }
+  .news__buttons {
+    margin-top: 28px;
+  }
+}
+
+/*------------FOOTER__CONTACTS----------------*/
+
+.footer {
+  background: #222222;
+  
+}
+.footer__container {
+}
+.footer__block {
+  padding: 80px 0px;
+}
+.footer__title {
+  border-bottom: 1px solid #8C8C8C;
+  padding-bottom: 48px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-right: 30px;
+ 
+}
+.footer__subtitle {
+  width: 862px;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: left;
+  color: #F8F5F4;
+
+
+}
+.contacts__footer {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__footer__basic {
+  width: 419px;
+  margin-right: 30px;
+}
+.contacts__footer__addresses {
+  display: flex;
+
+}
+
+.contacts__footer__addresses:not(:last-child){
+  margin-bottom: 24px;
+}
+.contacts__footer__addresses__logo {
+  width: 55px;
+  height: 55px;
+  background: #2C2C2C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__footer__addresses__name {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+
+}
+.contacts__footer__addresses__title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #8C8C8C;
+  text-transform: uppercase;
+
+
+}
+.contacts__footer__addresses__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #fff;
+
+}
+
+.menu__footer {
+}
+.menu__footer__list {
+  flex-direction: column;
+}
+
+.menu__footer__list a:hover{
+  text-decoration-line: none;
+}
+
+.menu__footer__list li:not(:last-child){
+  margin-bottom: 16px;
+}
+.contacts__footer__lawyer {
+  width: 424px;
+}
+.lawer__info {
+  color: #FFFFFF;
+}
+.lawer__info__item {
+  display: flex;
+  align-items: center;
+}
+.lawer__info__photo img{
+  border-radius: 50%;
+}
+
+.name__lawer {
+  text-align: left;
+  
+  margin-left: 24px;
+}
+.name__lawer__surname {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  
+ 
+
+}
+.name__lawer__speciality {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
+
+
+}
+.lawer__info__text {
+  line-height: 150%;
+  text-align: left;
+  margin: 16px 0px 24px;
+
+}
+
+@media (max-width:1150px){
+  .footer__subtitle{
+    display: none;
+  }
+  .footer__block {
+    padding: 60px 0px;
+  }
+  .footer__title {
+    padding-bottom: 24px;
+  }
+  .contacts__footer {
+    margin-top: 24px;
+  }
+  .contacts__footer__addresses__subtitle {
+    font-size: 14px;
+  }
+  .contacts__footer__addresses__logo{
+    width: 45px;
+    height: 45px;
+  }
+  .contacts__footer__addresses__logo img{
+    width: 24px;
+    height: 24px;
+  }
+  .contacts__footer__basic {
+    width: 335px;
+  }
+  .contacts__footer__lawyer {
+    width: 334px;
+  }
+}
+
+@media (max-width:743.98px){
+  .footer__block {
+    padding: 40px 0px;
+  }
+  .contacts__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts__footer__addresses {
+    margin-bottom: 40px;
+  }
+  .footer__title{
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+/*------FOOTER------------------------*/
+
+.reserved {
+  background: #181818;
+}
+.reservwd__block {
+  margin-top: -2px;
+  color: #FFFFFF;
+  line-height: 120%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0px 16px;
+}
+
+@media (max-width:550px){
+  .reservwd__block{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reserved__rights{
+    margin-bottom: 8px;
+  }
+
 }
