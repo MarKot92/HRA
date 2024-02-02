@@ -954,7 +954,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-    color:#222;
+  color:#222;
   text-align: center;
   line-height: 120%;
   margin-bottom: 12px;
@@ -986,6 +986,15 @@ body {
 
 }
 
+.employee:hover .employee__profession{
+  margin-bottom: 0px;
+}
+
+.employee:hover .employee__name {
+  margin-top: 0px
+}
+
+
 
 
 
@@ -1011,6 +1020,7 @@ body {
 .employee__profession {
   font-weight: 300;
   text-transform: lowercase;
+  margin-bottom: 24px;
 }
 .employee__text {
   display: none;
